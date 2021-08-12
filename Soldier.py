@@ -18,5 +18,5 @@ class Soldier:
 
     def printSoldier(self):
         print("Full name: " + self.fullName +
-              ", Personal number" + self.personalNumber +
+              ", Personal number: " + str(self.personalNumber) +
               ", rnak: " + self.rank)
