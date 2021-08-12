@@ -27,4 +27,3 @@ brunch1 = Branch(1)
 brunch1.addSection(section1)
 
 brunch1.printHierarchy()
-
