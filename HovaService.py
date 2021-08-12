@@ -4,9 +4,8 @@ from Branch import Branch
 
 class HovaService:
 
-    def __init__(self, soldier: Soldier, serviceStatus="Hova"):
+    def __init__(self, soldier: Soldier):
         self.soldier = soldier
-        self.serviceStatus = serviceStatus
 
     def askForGimel(self):
         if self.serviceStatus is "Hova":
