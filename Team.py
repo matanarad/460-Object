@@ -3,7 +3,7 @@ from Soldier import Soldier
 
 class Team:
 
-    def __init__(self, teamName, teamLeader:Soldier=""):
+    def __init__(self, teamName, teamLeader: Soldier = ""):
         self.teamName = teamName
         self.teamLeader = teamLeader
         self.soldiersList = []
@@ -12,4 +12,5 @@ class Team:
         self.soldiersList.append(soldier)
 
     def freeSoldier(self, soldier: Soldier):
-        pass
+        self.soldiersList.remove(soldier)
+        print("release was a success")

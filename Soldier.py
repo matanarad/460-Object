@@ -7,11 +7,11 @@ class Soldier:
 
     def promotion(self):
         rankList = ["Private", "Corporal", "Sergeant", "Staff Sergeant"]
-        try:
+        if self.rank == rankList[len(rankList)]:
+            print("error higest rank")
+        else:
             self.rank = rankList[rankList.index(self.rank)+1]
-            print("promotion was success")
-        except:
-            print("error -> promotion was unsuccess")
+            print("promotion was a success")
 
     def askForGimel(self):
         print(self.fullName + "you got 1 gimel")
