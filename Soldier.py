@@ -15,3 +15,8 @@ class Soldier:
 
     def askForGimel(self):
         print(self.fullName + "you got 1 gimel")
+
+    def printSoldier(self):
+        print("Full name: " + self.fullName +
+              ", Personal number" + self.personalNumber +
+              ", rnak: " + self.rank)

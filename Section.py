@@ -7,8 +7,12 @@ class Section:
     def __init__(self, number, sectionHead: Soldier = ""):
         self.number = number
         self.sectionHead = sectionHead
-        self.teamList = []
+        self.teamList = [Team]
 
     def addTeam(self, team: Team):
         self.teamList.append(team)
 
+    def printSection(self):
+        print("Section number: " + self.number)
+        for team in self.teamList:
+            team.printTeam()
