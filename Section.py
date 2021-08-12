@@ -16,3 +16,11 @@ class Section:
         print("Section number: " + self.number)
         for team in self.teamList:
             team.printTeam()
+
+    def soldierExistInSection(self, number):
+        tempSoldier = False
+        for team in self.teamList:
+            tempSoldier = team.soldierExistInTeam(number)
+            if tempSoldier is not False:
+                return tempSoldier
+        return tempSoldier

@@ -19,3 +19,9 @@ class Team:
         print("Team name: " + self.teamName)
         for soldier in self.soldiersList:
             soldier.printSoldier()
+
+    def soldierExistInTeam(self, number):
+        for soldier in self.soldiersList:
+            if soldier.personalNumber == number:
+                return soldier
+        return False

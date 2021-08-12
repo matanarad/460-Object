@@ -16,3 +16,11 @@ class Branch:
         print("Branch Number: " + self.number)
         for section in self.sectionList:
             section.printSection()
+
+    def soldierExistInBranch(self, number):
+        tempSoldier = False
+        for section in self.sectionList:
+            tempSoldier = section.soldierExistInSection(number)
+            if tempSoldier is not False:
+                return tempSoldier
+        return tempSoldier
