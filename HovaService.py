@@ -29,7 +29,7 @@ class HovaService(Soldier):
             elif isinstance(targetSoldier, KevaService):
                 print("you'er under arrest")
 
-    def askForDayoff(self, days):
+    def askForDaysoff(self, days):
         if self.daysoff - days > 0:
             self.daysoff = self.daysoff - days
             print("Your vacation has been approved")
