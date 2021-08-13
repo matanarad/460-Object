@@ -10,7 +10,7 @@ class KevaService (Soldier):
     def askForGimel(self):
         print("you got 10 gimel")
 
-    def askForDayoff(self, days):
+    def askForDaysoff(self, days):
         if self.daysoff - days > 0:
             self.daysoff = self.daysoff - days
             print("Your vacation has been approved")
