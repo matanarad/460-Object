@@ -1,4 +1,5 @@
 Additional functions and properties (Article 9) 
+
     - Days off
         - Propertie of number of Days off
         - A function (askForDaysoff) that prints if a soldier can go on vacation according to the amount of days of he has left
