@@ -7,6 +7,7 @@ class HovaService(Soldier):
 
     def __init__(self, fullName, personalNumber, rank):
         super().__init__(fullName, personalNumber, rank)
+        self.daysoff = 20
 
     def askForGimel(self):
         print("ERROR Try  again later")
@@ -27,3 +28,12 @@ class HovaService(Soldier):
                 print("Error you cant do it")
             elif isinstance(targetSoldier, KevaService):
                 print("you'er under arrest")
+
+    def askForDayoff(self, days):
+        if self.daysoff - days > 0:
+            self.daysoff = self.daysoff - days
+            print("Your vacation has been approved")
+            print("You have {} days left".format(self.daysoff))
+        else:
+            print("You dont have enough days off")
+            print("Number of days off left is: {}".format(self.daysoff))
