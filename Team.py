@@ -10,7 +10,6 @@ class Team:
 
     def addSoldier(self, soldier: Soldier):
         self.soldiersList.append(soldier)
-        print(len(self.soldiersList))
 
     def freeSoldier(self, soldier: Soldier):
         self.soldiersList.remove(soldier)

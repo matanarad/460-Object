@@ -13,13 +13,8 @@ class Soldier:
             self.rank = Soldier.rankList[Soldier.rankList.index(self.rank)+1]
             print("promotion was a success")
 
-    # def askForGimel(self):
-    #     if isinstance(self, HovaService):
-    #         print("ERROR Try  again later")
-    #     elif isinstance(self, KevaService):
-    #         print("you got 10 gimel")
-    #     else:
-    #         print("you got 1 gimel")
+    def askForGimel(self):
+        print("you got 1 gimel")
 
     def printSoldier(self):
         print("Full name: " + self.fullName +

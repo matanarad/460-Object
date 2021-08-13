@@ -1,29 +1,29 @@
 from KevaService import KevaService
-from Soldier import Soldier
 from HovaService import HovaService
 from Team import Team
 from Section import Section
 from Branch import Branch
 
-soldier1 = KevaService("Matan Arad", 123445, "Private")
-soldier12 = HovaService("Matan Arad1", 12344, "Private")
-soldier2 = Soldier("Matan Arad2", 12344, "Private")
-soldier3 = Soldier("Matan Arad3", 12345, "Private")
-team1 = Team("wings")
-team2 = Team("wings1")
+soldier1 = KevaService("Soldier one", 123, "Staff Sergeant")
+soldier12 = HovaService("Soldier Two", 1234, "Sergeant")
+soldier2 = HovaService("Soldier three", 12345, "Private")
+soldier3 = HovaService("Soldier four", 123456, "Corporal")
+wingsTeam = Team("Wings")
+teslaTeam = Team("Tesla")
 
-team1.addSoldier(soldier12)
-team1.addSoldier(soldier2)
-team2.addSoldier(soldier3)
+wingsTeam.addSoldier(soldier12)
+wingsTeam.addSoldier(soldier2)
+teslaTeam.addSoldier(soldier3)
+teslaTeam.addSoldier(soldier1)
+
 
 section1 = Section(1)
 
-section1.addTeam(team1)
-section1.addTeam(team2)
-
-section1.printSection()
+section1.addTeam(teslaTeam)
+section1.addTeam(wingsTeam)
 
 brunch1 = Branch(1)
 brunch1.addSection(section1)
 
 brunch1.printHierarchy()
+# soldier12.shoutedShatz(123445)
