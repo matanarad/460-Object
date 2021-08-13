@@ -5,8 +5,8 @@ from Branch import Branch
 
 class HovaService(Soldier):
 
-    def __init__(self, fullName, personalNumber, rank):
-        super().__init__(fullName, personalNumber, rank)
+    def __init__(self, fullName, personalNumber, rank, kaba=None, dapar=None):
+        super().__init__(fullName, personalNumber, rank, kaba, dapar)
         self.daysoff = 20
 
     def askForGimel(self):

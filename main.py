@@ -5,9 +5,9 @@ from Section import Section
 from Branch import Branch
 
 soldierKeva1 = KevaService("Soldier one", 123, "Staff Sergeant")
-soldierHova1 = HovaService("Soldier Two", 1234, "Sergeant")
+soldierHova1 = HovaService("Soldier Two", 1234, "Sergeant", 56, 90)
 soldierHova2 = HovaService("Soldier three", 12345, "Private")
-soldierKeva2 = KevaService("Soldier four", 123456, "Corporal")
+soldierKeva2 = KevaService("Soldier four", 123456, "Corporal", 50, 60)
 
 wingsTeam = Team("Wings")
 teslaTeam = Team("Tesla")
@@ -26,3 +26,4 @@ brunch1.addSection(section1)
 # brunch1.printHierarchy()
 # soldier12.shoutedShatz(123445)
 # soldierKeva1.askForDayoff(25)
+# soldierKeva2.officerTraining()

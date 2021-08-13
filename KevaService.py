@@ -3,8 +3,8 @@ from Soldier import Soldier
 
 class KevaService (Soldier):
 
-    def __init__(self, fullName, personalNumber, rank):
-        super().__init__(fullName, personalNumber, rank)
+    def __init__(self, fullName, personalNumber, rank, kaba=None, dapar=None):
+        super().__init__(fullName, personalNumber, rank, kaba, dapar)
         self.daysoff = 30
 
     def askForGimel(self):
